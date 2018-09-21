@@ -1,8 +1,14 @@
 /* TITULO */
+
+.form-collab{
+width: 80vw;
+}
+
 .form-collab .title{
-    font-size: 30px;
     display: block;
+    font-size: 30px;
     text-align: center;
+    margin-bottom: 6px;
 }
 
 /* SUBTITULO */
@@ -12,4 +18,27 @@
     text-align: center;
     color: var(--color-first);
     font-weight: bold;
+    margin-bottom: var(--spacing-medium);
+}
+
+.form-collab .input{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid var(--color-second);
+    background-color: transparent;
+    height: 2em;
+    font-weight: bold;
+}
+
+/* CONTEUDO DO INPUT SELECIONADO */
+
+.form-collab .input::selection {
+    background-color: var(--color-first);
+    color: var(--color-zero);
+
+}
+
+.form-collab .input:focus,
+.form-collab .input:hover{
+border-bottom-color: var(--color-first);
 }
